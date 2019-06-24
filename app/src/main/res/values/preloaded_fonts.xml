@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alex_brush</item>
+        <item>@font/allan</item>
+        <item>@font/archivo_black</item>
+        <item>@font/bubbler_one</item>
+        <item>@font/carrois_gothic_sc</item>
+        <item>@font/junge</item>
+        <item>@font/kameron</item>
+        <item>@font/maitree_extralight</item>
+        <item>@font/philosopher</item>
+    </array>
+</resources>

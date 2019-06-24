@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".OpenScreenActivity">
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="192dp"
+        android:textSize="20sp"
+        android:background="#0896a5"
+        android:onClick="easyButtonClick"
+        android:text="LOW"
+        app:fontFamily="@font/bubbler_one"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mediumButton" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="192dp"
+        android:textSize="20sp"
+        android:background="#0bc4c4"
+        android:onClick="mediumButtonClick"
+        android:text="MEDIUM"
+        android:textStyle="bold"
+        app:fontFamily="@font/bubbler_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hardButton" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="192dp"
+        android:background="#0cd3bc"
+        android:onClick="hardButtonClick"
+        android:textSize="20sp"
+        android:text="HIGH"
+        android:textStyle="bold"
+        app:fontFamily="@font/bubbler_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="745dp"
+        android:layout_height="711dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@drawable/capture" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="What is Your Reading Level?"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bubbler_one"
+        app:layout_constraintBottom_toTopOf="@+id/mediumButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
